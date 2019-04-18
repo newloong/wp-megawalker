@@ -1,6 +1,6 @@
 {
-    "name": "alex-418/wp-megawalker",
-    "version": "1.0.0",
+    "name": "newloong/wp-megawalker",
+    "version": "0.0.6",
     "keywords": ["wordpress", "bootstrap", "bootstrap 4", "submenu", "megamenu", "mega menu", "nav walker"],
     "license": "MIT",
     "authors": [
@@ -14,7 +14,12 @@
     },
     "autoload": {
         "psr-4": {
-            "alex418\\": "inc"
+            "Newloong\\": "inc"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.1"
         }
     },
     "scripts": {
@@ -22,7 +27,8 @@
             "@standards"
         ],
         "standards": [
-            "vendor/bin/phpcs --standard=phpcs.ruleset.xml inc"
+            "vendor/bin/phpcs --standard=vendor/humanmade/coding-standards ."
         ]
+
     }
 }
