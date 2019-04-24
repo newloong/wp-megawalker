@@ -104,7 +104,7 @@ class MegaWalker extends \Walker_Nav_Menu {
 		// Check if item has featured image
 		if ( $has_feature_image && $this->mege_menu_id !== 0 ) {
 			$post_id     = url_to_postid( $item->url );
-			$item_output .= '<img alt="' . esc_attr( $item->title ) . '" src="' . get_the_post_thumbnail_url( $post_id ) . '"/>';
+			$item_output .= '<img alt="' . esc_attr( $item->title ) . '" src="' . get_the_post_thumbnail_url( $post_id, 'thumbnail' ) . '"/>';
 		} else {
 
             // Check if item has image filed
